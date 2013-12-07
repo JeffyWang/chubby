@@ -1,0 +1,98 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx
+   	 	http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+        http://cxf.apache.org/jaxrs
+        http://cxf.apache.org/schemas/jaxrs.xsd">
+
+    <import resource="classpath:META-INF/cxf/cxf.xml" />
+    <import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+    <context:property-placeholder />
+    <context:annotation-config />
+    <bean
+            class="org.springframework.web.context.support.ServletContextPropertyPlaceholderConfigurer" />
+    <bean
+            class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer" />
+
+    <!-- 支持 @Transactional 标记 -->
+    <tx:annotation-driven transaction-manager="txManager" proxy-target-class="true"/>
+    <bean id="txManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory_chubby"/>
+    </bean>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/pages/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!-- 配置数据库连接池 -->
+    <bean id="dataSource_chubby" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+          destroy-method="close">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="jdbcUrl"
+                  value="jdbc:mysql://127.0.0.1:3306/chubby?useUnicode=true&amp;characterEncoding=UTF-8"></property>
+
+        <property name="user" value="root"></property>
+        <property name="password" value="root"></property>
+        <property name="maxPoolSize" value="10"></property>
+        <property name="minPoolSize" value="5"></property>
+        <property name="initialPoolSize" value="5"></property>
+        <property name="maxIdleTime" value="20"></property>
+        <property name="maxStatements" value="0" />
+        <property name="idleConnectionTestPeriod" value="60" />
+        <!-- property name="checkoutTimeout" value="10000"></property> -->
+    </bean>
+    <bean id="sessionFactory_chubby"
+          class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+        <property name="dataSource">
+            <ref local="dataSource_chubby" />
+        </property>
+
+        <!-- 设置hibernate相关属性 -->
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                <prop key="hibernate.show_sql">false</prop>
+                <prop key="generate_statistics">true</prop>
+                <prop key="hibernate.use_sql_comments">false</prop>
+                <prop key="hibernate.format_sql">true</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+            </props>
+        </property>
+
+        <!-- 实体bean -->
+        <property name="packagesToScan">
+            <list>
+                <value>com.jeffy.bean</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- controller -->
+    <jaxrs:server id="controller" address="/">
+        <jaxrs:serviceBeans>
+            <!--<bean class="com.jeffy.controller.UserController"/>-->
+            <bean id="userService" class="com.jeffy.service.impl.UserServiceImpl"/>
+        </jaxrs:serviceBeans>
+        <jaxrs:providers>
+            <bean class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider"/>
+        </jaxrs:providers>
+    </jaxrs:server>
+
+    <!-- service -->
+    <!--<bean id="userService" class="com.jeffy.service.impl.UserServiceImpl"/>-->
+
+    <!-- dao -->
+    <bean id="userDao" class="com.jeffy.dao.impl.UserDaoImpl">
+        <property name="sessionFactory">
+            <ref bean="sessionFactory_chubby" />
+        </property>
+    </bean>
+
+</beans>

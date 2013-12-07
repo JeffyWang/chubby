@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="chubby:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="chubby.war">
+      <element id="artifact" artifact-name="chubby:war exploded" />
+    </root>
+  </artifact>
+</component>
