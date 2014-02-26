@@ -13,6 +13,6 @@ public class MessageConstants {
     public static String SAVE_SUCCESS = "save success";
     public static String UPDATE_SUCCESS = "update success";
     public static String GET_SUCCESS = "get information success";
-    public static String GET_LIST_SUCCESS = "get list informations success";
-    public static String DELETE_SUCCESS = "deelte success";
+    public static String GET_LIST_SUCCESS = "get list information success";
+    public static String DELETE_SUCCESS = "delete success";
 }

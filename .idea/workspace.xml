@@ -2,43 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" name="Default" comment="">
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__asm_asm_3_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__com_fasterxml_jackson_core_jackson_annotations_2_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__com_fasterxml_jackson_core_jackson_core_2_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__com_fasterxml_jackson_core_jackson_databind_2_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_json_provider_2_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__com_sun_xml_bind_jaxb_impl_2_2_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__javax_ws_rs_jsr311_api_1_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__org_apache_cxf_cxf_api_2_7_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__org_apache_cxf_cxf_rt_bindings_soap_2_7_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__org_apache_cxf_cxf_rt_bindings_xml_2_7_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__org_apache_cxf_cxf_rt_core_2_7_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__org_apache_cxf_cxf_rt_databinding_jaxb_2_7_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__org_apache_cxf_cxf_rt_frontend_jaxrs_2_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__org_apache_cxf_cxf_rt_frontend_jaxws_2_7_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__org_apache_cxf_cxf_rt_frontend_simple_2_7_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__org_apache_cxf_cxf_rt_transports_http_2_7_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__org_apache_cxf_cxf_rt_ws_addr_2_7_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__org_apache_cxf_cxf_rt_ws_policy_2_7_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__org_apache_geronimo_specs_geronimo_javamail_1_4_spec_1_7_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__org_apache_neethi_neethi_3_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__org_apache_ws_xmlschema_xmlschema_core_2_0_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__org_codehaus_woodstox_stax2_api_3_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\.idea\libraries\Maven__org_codehaus_woodstox_woodstox_core_asl_4_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\IntelliJ\chubby\src\main\java\com\jeffy\dao\impl\BaseDao.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jeffy/bean/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/jeffy/bean/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jeffy/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jeffy/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jeffy/dao/impl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jeffy/dao/impl/UserDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jeffy/dao/CommonDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/jeffy/dao/CommonDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jeffy/dao/impl/CommonDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jeffy/dao/impl/CommonDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jeffy/constants/MessageConstants.java" afterPath="$PROJECT_DIR$/src/main/java/com/jeffy/constants/MessageConstants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jeffy/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jeffy/service/UserService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jeffy/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jeffy/service/impl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chubby.iml" afterPath="$PROJECT_DIR$/chubby.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="F:\IntelliJ\chubby\src\main\webapp\WEB-INF\pages\index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
     </list>
     <ignored path="chubby.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,7 +16,7 @@
     <file path="/UserDaoImpl.java" changelist="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" time="1393401406305" ignored="false" />
     <file path="/UserDao.java" changelist="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" time="1393400737552" ignored="false" />
     <file path="/UserService.java" changelist="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" time="1393403299915" ignored="false" />
-    <file path="/UserServiceImpl.java" changelist="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" time="1393405832867" ignored="false" />
+    <file path="/UserServiceImpl.java" changelist="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" time="1393406458053" ignored="false" />
     <file path="/UserController.java" changelist="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" time="1386403420766" ignored="false" />
     <file path="/fragment.java" changelist="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" time="1393401442021" ignored="false" />
     <file path="/log4j.properties" changelist="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" time="1386402903205" ignored="false" />
@@ -64,7 +33,7 @@
     <file path="/COSServiceProxyServiceImpl.java" changelist="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" time="1393232129203" ignored="false" />
     <file path="/ErrorCode.java" changelist="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" time="1393402944394" ignored="false" />
     <file path="/Response.java" changelist="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" time="1393402967050" ignored="false" />
-    <file path="/CommonDaoImpl.java" changelist="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" time="1393404281458" ignored="false" />
+    <file path="/CommonDaoImpl.java" changelist="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" time="1393406541482" ignored="false" />
     <file path="/CommonDao.java" changelist="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" time="1393404006052" ignored="false" />
     <file path="/MessageConstants.java" changelist="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" time="1393404647495" ignored="false" />
     <file path="/ResponseUtil.java" changelist="f2bc96a2-7f96-4cc2-bd75-47605d360e6e" time="1393405406656" ignored="false" />
@@ -131,20 +100,44 @@
       <file leaf-file-name="UserServiceImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="58" selection-start="2212" selection-end="2212" vertical-scroll-proportion="0.66725045">
+            <state line="40" column="49" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.56567425">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2304#2321#0" expanded="true" />
+                <element signature="e#2087#2101#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/bean/User.java">
+      <file leaf-file-name="UserService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="5" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="47" column="52" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/dao/CommonDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="34" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonDaoImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/dao/impl/CommonDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="41" selection-start="1337" selection-end="1337" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,13 +169,13 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeffy/constants/ErrorCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeffy/bo/Response.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jeffy/dao/CommonDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jeffy/dao/impl/CommonDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jeffy/constants/MessageConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeffy/util/ResponseUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jeffy/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeffy/bean/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jeffy/dao/impl/CommonDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jeffy/dao/CommonDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jeffy/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeffy/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jeffy/constants/MessageConstants.java" />
       </list>
     </option>
   </component>
@@ -1052,13 +1045,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.16637479">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="85" column="19" selection-start="4005" selection-end="4005" vertical-scroll-proportion="0.5555556">
@@ -1087,22 +1073,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/3.2.0.RELEASE/spring-orm-3.2.0.RELEASE-sources.jar!/org/springframework/orm/hibernate3/HibernateTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="685" column="33" selection-start="25359" selection-end="25359" vertical-scroll-proportion="0.49166667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/dao/impl/CommonDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="75" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/bo/Response.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="46" selection-start="120" selection-end="145" vertical-scroll-proportion="0.19964974">
@@ -1112,35 +1082,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/constants/MessageConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="59" selection-start="615" selection-end="615" vertical-scroll-proportion="0.5323993">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="28" selection-start="568" selection-end="568" vertical-scroll-proportion="0.5555556">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="16" selection-start="430" selection-end="430" vertical-scroll-proportion="-0.2748538">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/dao/CommonDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="6" selection-start="411" selection-end="411" vertical-scroll-proportion="0.5323993">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1160,19 +1105,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="48" selection-start="735" selection-end="735" vertical-scroll-proportion="0.5989492">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/bean/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="5" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0">
+        <state line="46" column="0" selection-start="791" selection-end="791" vertical-scroll-proportion="1.530648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/3.2.0.RELEASE/spring-orm-3.2.0.RELEASE-sources.jar!/org/springframework/orm/hibernate3/HibernateTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="504" column="17" selection-start="19657" selection-end="19657" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/dao/impl/CommonDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="41" selection-start="1337" selection-end="1337" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/dao/CommonDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="34" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="52" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/constants/MessageConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="59" selection-start="614" selection-end="614" vertical-scroll-proportion="0.5555556">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jeffy/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="58" selection-start="2212" selection-end="2212" vertical-scroll-proportion="0.66725045">
+        <state line="40" column="49" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.56567425">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2304#2321#0" expanded="true" />
+            <element signature="e#2087#2101#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -2,17 +2,12 @@ package com.jeffy.service.impl;
 
 import com.jeffy.bean.User;
 import com.jeffy.bo.Response;
-import com.jeffy.constants.MessageConstants;
 import com.jeffy.dao.UserDao;
 import com.jeffy.service.UserService;
 import com.jeffy.util.ResponseUtil;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -30,7 +25,8 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private  UserDao userDao = null;
 
-    public Response getUser(@PathParam("id") int id) {
+    public Response getUser(Long id) {
+        System.out.println(id);
         Response response = ResponseUtil.getResponse();
         User user = (User)userDao.getById(User.class,id);
 
@@ -68,10 +64,10 @@ public class UserServiceImpl implements UserService {
         return response;
     }
 
-    public Response deleteUser(@PathParam("id") int id) {
+    public Response deleteUser(Long id) {
         Response response = ResponseUtil.deleteResponse();
         userDao.deleteById(User.class, id);
-        Map<String, Integer> data = new HashMap<String, Integer>();
+        Map<String, Long> data = new HashMap<String, Long>();
         data.put("id",id);
 
         response.setData(data);

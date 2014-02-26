@@ -1,6 +1,5 @@
 package com.jeffy.dao.impl;
 
-import java.io.Serializable;
 import java.sql.SQLException;
 import java.util.Iterator;
 import java.util.List;
@@ -40,11 +39,11 @@ public class CommonDaoImpl<T> extends HibernateDaoSupport implements CommonDao<T
 		getHibernateTemplate().delete(clazz.getName(), entity);
 	}
 
-	public void deleteById(Class<T> clazz, int id) {
+	public void deleteById(Class<T> clazz, Long id) {
 		getHibernateTemplate().delete(clazz.getName(), getById(clazz, id));
 	}
 
-	public T getById(Class<T> clazz, int id) {
+	public T getById(Class<T> clazz, Long id) {
 		return getHibernateTemplate().get(clazz, id);
 	}
 

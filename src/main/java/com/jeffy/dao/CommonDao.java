@@ -18,9 +18,9 @@ public interface CommonDao<T> {
 
 	void delete(Class<T> clazz, Object entity);
 
-	void deleteById(Class<T> clazz, int id);
+	void deleteById(Class<T> clazz, Long id);
 
-	T getById(Class<T> clazz, int id);
+	T getById(Class<T> clazz, Long id);
 
 	List<T> getListAll(Class<T> clazz,
                        final Map<String, Object> equalCondition,

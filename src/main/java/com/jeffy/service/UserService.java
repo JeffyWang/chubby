@@ -25,7 +25,7 @@ public interface UserService {
     @GET
     @Path("/{id}")
     @Produces("application/json;charset=utf-8")
-    public Response getUser(@PathParam("id") int id);
+    public Response getUser(@PathParam("id") Long id);
 
     @GET
     @Path("/")
@@ -45,5 +45,5 @@ public interface UserService {
     @DELETE
     @Path("/{id}")
     @Produces("application/json;charset=utf-8")
-    public Response deleteUser(@PathParam("id") int id);
+    public Response deleteUser(@PathParam("id") Long id);
 }
