@@ -1,19 +1,23 @@
 package com.jeffy.service;
 
 import com.jeffy.bean.User;
+import com.jeffy.bo.Response;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.ws.rs.*;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
+import javax.ws.rs.DELETE;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
 import java.util.List;
 
 /**
- * Created with IntelliJ IDEA.
  * User: jeffy
  * Date: 13-12-7
  * Time: 上午11:13
- * To change this template use File | Settings | File Templates.
  */
 
 @Path("/user")
@@ -21,28 +25,25 @@ public interface UserService {
     @GET
     @Path("/{id}")
     @Produces("application/json;charset=utf-8")
-    public Response getUser(@PathParam("id") Long id);
+    public Response getUser(@PathParam("id") int id);
 
     @GET
     @Path("/")
     @Produces("application/json;charset=utf-8")
-    public Response listUsers();
+    public Response getUsers();
 
     @POST
     @Path("/")
     @Produces("application/json;charset=utf-8")
-    @Consumes({MediaType.MULTIPART_FORM_DATA, MediaType.APPLICATION_JSON })
-    public Response addUser(User user);
+    public Response saveUser(User user);
 
     @PUT
     @Path("/")
     @Produces("application/json;charset=utf-8")
-    @Consumes({MediaType.MULTIPART_FORM_DATA, MediaType.APPLICATION_JSON })
-    public Response updataUser(User user);
+    public Response updateUser(User user);
 
     @DELETE
     @Path("/{id}")
     @Produces("application/json;charset=utf-8")
-    public Response deleteUser(@PathParam("id") Long id);
-
+    public Response deleteUser(@PathParam("id") int id);
 }

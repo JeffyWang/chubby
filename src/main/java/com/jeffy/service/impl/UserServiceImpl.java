@@ -1,63 +1,81 @@
 package com.jeffy.service.impl;
 
 import com.jeffy.bean.User;
+import com.jeffy.bo.Response;
+import com.jeffy.constants.MessageConstants;
 import com.jeffy.dao.UserDao;
 import com.jeffy.service.UserService;
+import com.jeffy.util.ResponseUtil;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
- * Created with IntelliJ IDEA.
  * User: jeffy
  * Date: 13-12-7
  * Time: 上午11:14
- * To change this template use File | Settings | File Templates.
  */
 
-@Transactional
+//@Transactional
+//@Service("userService")
 public class UserServiceImpl implements UserService {
     private Logger log = Logger.getLogger(UserServiceImpl.class);
     @Autowired
     private  UserDao userDao = null;
 
-    public Response getUser(@PathParam("id") Long id) {
-        User user = userDao.find(id);
+    public Response getUser(@PathParam("id") int id) {
+        Response response = ResponseUtil.getResponse();
+        User user = (User)userDao.getById(User.class,id);
 
-        log.debug("Get a user, the id is :" + id);
-        return Response.ok(user).build();
+        response.setData(user);
+        log.debug("Get a user, the user's id is :" + id);
+        return response;
     }
 
-    public Response listUsers() {
-        List<User> userList = userDao.findAll();
+    public Response getUsers() {
+        Response response = ResponseUtil.getListResponse();
+        Map<String, Object> equalCondition = null;
+        Map<String, String> likeCondition = null;
+        List<User> userList = userDao.getListAll(User.class, equalCondition, likeCondition);
 
+        response.setData(userList);
         log.debug("List all users");
-        return Response.ok(userList).build();
+        return response;
     }
 
-    public Response addUser(User user) {
-        userDao.save(user);
+    public Response saveUser(User user) {
+        Response response = ResponseUtil.saveResponse();
+        User u = (User) userDao.save(user);
 
-        log.debug("Add a new user, the user's name is : " + user.getUserName());
-        return Response.ok().build();
+        response.setData(u);
+        log.debug("Add a new user, the user's id is : " + user.getId());
+        return response;
     }
 
-    public Response updataUser(User user) {
-        userDao.refresh(user);
+    public Response updateUser(User user) {
+        Response response = ResponseUtil.updateResponse();
+        User u = (User)userDao.update(user);
 
-        log.debug("Updata a user, the user's id id : " + user.getId());
-        return Response.ok().build();
+        response.setData(u);
+        log.debug("Updata a user, the user's id is : " + user.getId());
+        return response;
     }
 
-    public Response deleteUser(@PathParam("id") Long id) {
-        userDao.removeById(id);
+    public Response deleteUser(@PathParam("id") int id) {
+        Response response = ResponseUtil.deleteResponse();
+        userDao.deleteById(User.class, id);
+        Map<String, Integer> data = new HashMap<String, Integer>();
+        data.put("id",id);
 
+        response.setData(data);
         log.debug("Delete a user, the user's id is : " + id);
-        return Response.ok().build();
+        return response;
     }
 }
