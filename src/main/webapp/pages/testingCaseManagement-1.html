@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Yali Cai">
+<title>testingcaseManagement</title>
+<!-- Bootstrap core CSS -->
+<link href="../css/custom-bootstrap.css" rel="stylesheet">
+<!--font-awesome-->
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome.min.css"/>
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.css"/>
+<!-- Custom styles for this template -->
+<link href="../css/style.css" rel="stylesheet">
+</head>
+<body class="Iframe_body">
+<!--以上为必须要的--> 
+
+<!--分栏框开始-->
+<div class="panel panel-default">
+<div class="panel-heading">
+  <h3 class="panel-title"> <i class="icon-list"></i>测试用例管理</h3>
+</div>
+<!--panle-heading-->
+<div class="panel-body">
+<div class="row" style="padding-bottom:20px;">
+  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal1">新建</button>
+  <form class="form-inline pull-right" role="form">
+    <div class="form-group">
+      <label for="exampleInputEmail2"> 名称:&nbsp;</label>
+      <label>
+        <input type="text" class="form-control" style="width:100px;"  placeholder="">
+      </label>
+    </div>
+    &nbsp;&nbsp;&nbsp;
+    <div class="form-group">
+      <label  for="exampleInputPassword2">用例状态: &nbsp;</label>
+      <label>
+        <select class="form-control">
+          <option>尚未申请</option>
+          <option>失败</option>
+          <option>锁定</option>
+          <option>未分配</option>
+        </select>
+      </label>
+    </div>
+  </form>
+</div>
+<div class="table-responsive">
+  <table class="table table-bordered table-striped" id="table_01">
+    <thead>
+      <tr>
+        <th>名称</th>
+        <th>创建者</th>
+        <th>创建日期</th>
+        <th>状态</th>
+        <th>测试用例版本</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="testingCase.html">LTY-2228:资源统计——界面布局显示查看</a></td>
+        <td>孙杨</td>
+        <td>2013-09-12</td>
+        <th><span class="label label-primary">未执行</span></th>
+        <td>1.1</td>
+        <td><a href="#" style="margin-right:10px;">编辑</a><a href="#" style="margin-right:10px;">删除</a> <a href="#" style="margin-right:10px;">导入</a><a href="#" style="margin-right:10px;">导出</a><a href="#" data-toggle="modal" data-target="#myModal2" style="margin-right:10px;">分配</a><a href="run.html" style="margin-right:10px;">执行</a></td>
+      </tr>
+      <tr>
+        <td><a href="testingCase.html"> LTY-2229:虚拟机——默认日期查看</a></td>
+        <td>孙杨</td>
+        <td>2013-09-11</td>
+        <th><span class="label label-success">通过</span></th>
+        <td>1.1</td>
+        <td><a href="#" style="margin-right:10px;">编辑</a><a href="#" style="margin-right:10px;">删除</a> <a href="#" style="margin-right:10px;">导入</a><a href="#" style="margin-right:10px;">导出</a><a href="#" data-toggle="modal" data-target="#myModal2" style="margin-right:10px;">分配</a><a href="run.html" style="margin-right:10px;">执行</a></td>
+      </tr>
+      <tr>
+        <td><a href="testingCase.html"> LTY-2230:虚拟机——起始（结束）日期选择</a></td>
+        <td>孙杨</td>
+        <td>2013-09-07</td>
+        <th><span class="label label-success">通过</span></th>
+        <td>1.1</td>
+        <td><a href="#" style="margin-right:10px;">编辑</a><a href="#" style="margin-right:10px;">删除</a> <a href="#" style="margin-right:10px;">导入</a><a href="#" style="margin-right:10px;">导出</a><a href="#" data-toggle="modal" data-target="#myModal2" style="margin-right:10px;">分配</a><a href="run.html" style="margin-right:10px;">执行</a></td>
+      </tr>
+      <tr>
+        <td><a href="testingCase.html">LTY-2236:虚拟机——数据删除之后统计显示</a></td>
+        <td>孙杨</td>
+        <td>2013-09-13</td>
+        <td><span class="label label-warning">未分配</span></td>
+        <td>1.1</td>
+        <td><a href="#" style="margin-right:10px;">编辑</a><a href="#" style="margin-right:10px;">删除</a> <a href="#" style="margin-right:10px;">导入</a><a href="#" style="margin-right:10px;">导出</a><a href="#" data-toggle="modal" data-target="#myModal2" style="margin-right:10px;">分配</a><a href="run.html" style="margin-right:10px;">执行</a></td>
+      </tr>
+    </tbody>
+  </table>
+   </div>
+  <!--panel-body-->
+  <div class="panel-footer  text-right">
+    <ul class="pagination" style="margin:0px;">
+      <li class="disabled"><a href="#">«</a></li>
+      <li><a href="#">1 <span class="sr-only">(current)</span></a></li>
+      <li><a href="#">2</a></li>
+      <li  class="active"><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">»</a></li>
+    </ul>
+  </div>
+  <!--panel-footer--> 
+</div>
+</div>
+<!--分栏框结束--> 
+
+<!--弹出框-->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">新建测试用例</h4>
+      </div>
+      
+      <!--panel-heading-->
+      <div class="panel-body row">
+        <form class="bs-example form-horizontal" style="margin-top:10px;">
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">测试用例标题：</label>
+            <div class="col-md-7 col-sm-6">
+              <input type="text" class="form-control"  placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4  control-label">摘要：</label>
+            <div class="col-md-7 col-sm-6">
+              <textarea class="form-control" rows="3" placeholder=""></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4  control-label">前提条件：</label>
+            <div class="col-md-7 col-sm-6">
+              <textarea class="form-control" rows="3" placeholder=""></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">测试用例等级：</label>
+            <div class="col-md-7 col-sm-6">
+              <select class="form-control">
+                <option>中</option>
+                <option>高</option>
+                <option>低</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--panel-body-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!--弹出框--> 
+
+<!--分配-->
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">分配测试人员</h4>
+      </div>
+      
+      <!--panel-heading-->
+      <div class="panel-body row">
+        <form class="bs-example form-horizontal" style="margin-top:10px;">
+          <div class="form-group">
+          <div class="col-md-5 col-sm-5 col-md-offset-3 col-sm-offset-3">
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped" id="table_01">
+                <thead>
+                  <tr>
+                    <th>选择</th>
+                    <th>名称</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td>孙杨</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td>李伟</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--panel-body-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!--弹出框--> 
+
+<!--分配结束--> 
+
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>

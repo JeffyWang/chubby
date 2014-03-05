@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Yali Cai">
+<title>Index-DataPlatform</title>
+<!-- Bootstrap core CSS -->
+<link href="../css/custom-bootstrap.css" rel="stylesheet">
+<!--font-awesome-->
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome.min.css"/>
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.css"/>
+<!-- Custom styles for this template -->
+<link href="../css/style.css" rel="stylesheet">
+</head>
+<body class="Iframe_body">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class="icon-calendar"></i>计划管理</h3>
+  </div>
+  <!--panel-heading-->
+  <div class="panel-body">
+    <div class="row" style="padding-bottom:20px;">
+     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">创建计划</button>
+   
+    
+      <!--col-md-2-->
+      <div class="col-md-3 col-sm-6  pull-right">
+        <div class="input-group">
+          <input type="text" class="form-control"  placeholder="关键字">
+          <span class="input-group-btn">
+          <button class="btn btn-primary" type="button">检索</button>
+          </span> </div>
+        <!-- /input-group --></div>
+      <!--col-md-2--> 
+    </div>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped" id="table_01">
+      <thead>
+        <tr>
+          <th>测试计划</th>
+          <th >描述信息</th>
+          <th style="width:10%;">发布日期</th>
+          <th style="width:20%;">操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> 综合云平台二期AE2计量管理</td>
+          <td>针对系统功能——产品获取、报表查询、报表导出、资源统计、资源统计展示、计量配置等进行相应测试工作</td>
+          <td> 2013-08-18</td>
+          <td><a  href="#" data-toggle="modal" data-target="#myModal3">查看</a>&nbsp;&nbsp;&nbsp;<a  href="#">删除</a>&nbsp;&nbsp;&nbsp;<a  href="#">修改</a>&nbsp;&nbsp;&nbsp;<a  href="milestonesManagement.html">里程碑管理</a></td>
+        </tr>
+        
+       
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <div class="panel-footer  text-right">
+   
+  </div>
+  
+  <!--panel-footer--> 
+  <!--panel-footer--> 
+</div>
+
+<!--弹出框1-->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">创建里程碑</h4>
+      </div>
+      <!--panel-heading-->
+    <div class="panel-body row">
+      <form class="bs-example form-horizontal">
+       <div class="form-group">
+          <label class="col-md-3 col-sm-4 control-label">计划：</label>
+          <div class="col-md-7 col-sm-6">
+            <input type="text" class="form-control" >
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 col-sm-4 control-label">名称：</label>
+          <div class="col-md-7 col-sm-6">
+            <input type="text" class="form-control" >
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 col-sm-4 control-label">日期：</label>
+          <div class="col-md-7 col-sm-6">
+            <input type="text" class="form-control" >
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 col-sm-4 control-label">开始日期：</label>
+          <div class="col-md-7 col-sm-6">
+            <input type="text" class="form-control" >
+          </div>
+        </div>
+        
+         <div class="form-group">
+          <label class="col-md-3 col-sm-4 control-label">A优先级完成率：</label>
+          <div class="col-md-7 col-sm-6">
+            <input type="text" class="form-control" >
+          </div>
+        </div>
+         <div class="form-group">
+          <label class="col-md-3 col-sm-4 control-label">B优先级完成率：</label>
+          <div class="col-md-7 col-sm-6">
+            <input type="text" class="form-control" >
+          </div>
+        </div>
+         <div class="form-group">
+          <label class="col-md-3 col-sm-4 control-label">C优先级完成率：</label>
+          <div class="col-md-7 col-sm-6">
+            <input type="text" class="form-control" >
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--panel-body-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--弹出框1-->  
+<!--弹出框2-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h4 class="modal-title">创建计划</h4>
+    </div>
+    <!--panel-heading-->
+    <div class="panel-body row">
+      <form class="bs-example form-horizontal">
+        <div class="form-group">
+          <label class="col-md-3 col-sm-4 control-label">计划名称：</label>
+          <div class="col-md-7 col-sm-6">
+            <input type="text" class="form-control" >
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 col-sm-4 control-label">描述信息：</label>
+          <div class="col-md-7 col-sm-6">
+            <textarea class="form-control" rows="3" placeholder="描述"></textarea>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--panel-body-->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+      <button type="button" class="btn btn-success">重置</button>
+      <button type="button" class="btn btn-warning" data-dismiss="modal">取消</button>
+    </div>
+    
+    <!-- /.modal-content --> 
+  </div>
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--弹出框2--> 
+<!--弹出框3-->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">查看计划相关用例</h4>
+      </div>
+      <div class="modal-body">
+         <div class="table-responsive">
+    <table class="table table-bordered table-striped" id="table_01">
+      <thead>
+        <tr>
+          <th>名称</th>    
+          <th>作者</th> 
+          <th>创建日期</th>     
+          <th>测试用例版本</th>      
+          <th>运行模式</th>      
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="testingCase.html">LTY-1775：物理资源管理</a></td>
+          <td>张雯</td>
+          <td>2013-09-12</td>
+          <td>1</td>
+          <td>手工</td>
+        </tr>
+        <tr>
+          <td><a href="testingCase.html">LTY-1776：虚拟网络管理</a></td>
+          <td>王秋实</td>
+          <td>2013-09-11</td>
+          <td>1</td>
+          <td>手工</td>
+        </tr>
+        <tr>
+          <td><a href="testingCase.html">LTY-1777：虚拟主机管理</a></td>
+          <td>桂英</td>
+          <td>2013-09-07</td>
+          <td>1</td>
+          <td>手工</td>
+        </tr>
+        <tr>
+          <td><a href="testingCase.html">LTY-1778：虚拟存储管理</a></td>
+          <td>王秋实</td>
+          <td>2013-09-04</td>
+          <td>1</td>
+          <td>手工</td>
+        </tr>
+        <tr>
+          <td><a href="testingCase.html">LTY-1779：功能主流测试</a></td>
+          <td>林丽</td>
+          <td>2013-09-03</td>
+          <td>1</td>
+          <td>手工</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--弹出框3--> 
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>

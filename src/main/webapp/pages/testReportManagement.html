@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Yali Cai">
+<title>testReportManagement-CloudTest</title>
+<!-- Bootstrap core CSS -->
+<link href="../css/custom-bootstrap.css" rel="stylesheet">
+<!--font-awesome-->
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome.min.css"/>
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.css"/>
+<!-- Custom styles for this template -->
+<link href="../css/style.css" rel="stylesheet">
+<style type="text/css">
+form p {
+	padding-top:7px;
+}
+</style>
+</head>
+<body class="Iframe_body">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class="icon-home"></i>测试报告管理</h3>
+  </div>
+  <!--panel-heading-->
+  <div class="panel-body">
+    <div class="row" style="padding-bottom:20px;">
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">添加</button>
+       <button type="button" class="btn btn-danger" >删除</button>
+      <form class="bs-example form-horizontal" style="margin-top:10px;">
+      <div class="form-group">
+        <label class="col-md-3 col-sm-3 control-label">文档名称：</label>
+        <div class="col-md-4 col-sm-2 control-label" style="text-align:left;">
+          
+          <a href="#"> 测试报告书.联通云平台二期-AE2计量管理</a>
+        </div>
+        </div>
+        <div class="form-group">
+        <label class="col-md-3 col-sm-3 control-label">创建人：</label>
+        <div class="col-md-2 col-sm-2" >
+          <p> 王慧</p>
+        </div>
+      </div>
+       <div class="form-group">
+        <label class="col-md-3 col-sm-3 control-label">上传时间：</label>
+        <div class="col-md-2 col-sm-2">
+          <p> 2013-09-07</p>
+        </div>
+      </div>
+      </form>
+    </div>
+   
+  </div>
+  <div class="panel-footer  text-right">
+  
+  </div>
+  <!--panel-footer--> 
+</div>
+<!--panel panel-default--> 
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">添加：</h4>
+      </div>
+      <div class="modal-body">
+        <form class="bs-example form-horizontal" style="margin-top:10px;">
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">文档名：</label>
+            <div class="col-md-7 col-sm-6">
+              <input type="text" class="form-control"  placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">文档目录：</label>
+            <div class="col-md-7 col-sm-6">
+              <input type="file" class="form-control"  placeholder="">
+            </div>
+          </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">保存</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+
+<!-- Modal -->
+<div class="modal fade" id="myModa2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">编辑：</h4>
+      </div>
+      <div class="modal-body">
+        <form class="bs-example form-horizontal" style="margin-top:10px;">
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">文档名：</label>
+            <div class="col-md-7 col-sm-6">
+              <input type="text" class="form-control"  placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">完成时间：</label>
+            <div class="col-md-7 col-sm-6">
+              <input type="text" class="form-control"  placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">状态：</label>
+            <div class="col-md-7 col-sm-6">
+              <input type="text" class="form-control"  placeholder="">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">保存</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>

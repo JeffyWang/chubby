@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Yali Cai">
+<title>defectManagement</title>
+<!-- Bootstrap core CSS -->
+<link href="../css/custom-bootstrap.css" rel="stylesheet">
+<!--font-awesome-->
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome.min.css"/>
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.css"/>
+<!-- Custom styles for this template -->
+<link href="../css/style.css" rel="stylesheet">
+</head>
+<body class="Iframe_body">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class="icon-bar-chart"></i>缺陷管理</h3>
+  </div>
+  <!--panel-heading-->
+  <div class="panel-body">
+    <div class="row" style="padding-bottom:20px;"> 
+      <!--col-md-2-->  
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">创建</button>    
+      <form class="form-inline pull-right" role="form">
+      
+        <div class="form-group">
+          <label for="exampleInputEmail2"> 开发者:&nbsp;</label>
+          <label> <select class="form-control">
+            <option>贺鹏</option>
+            <option>何志江</option>
+          </select>
+          </label>
+        </div>
+&nbsp;&nbsp;&nbsp;
+        <div class="form-group">
+          <label  for="exampleInputPassword2">报告人: &nbsp;</label>
+          <label>
+             
+             <select class="form-control">
+          <option>李伟</option>
+          <option>孙杨</option>
+        </select> </label>
+         
+        </div>
+      </form>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped" id="table_01">
+        <thead>
+          <tr>
+            <th>编号</th>
+            <th>概要</th>
+            <th>开发者</th>
+            <th>报告人</th>
+            <th>优先级</th>
+            <th>状态</th>
+            <th>解决</th>
+            <th>创建日期</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="defect.html">LTYTHREE-40</a></td>
+            <td> 查询在某个时间段"暂停中"的产品时，没有撤销日期的产品没有被显示出来。</td>
+            <td> 贺鹏</td>
+            <td>李伟</td>
+            <td> 高</td>
+            <td><span class="label label-danger"> Open</span></td>
+            <td> 未解决</td>
+            <td> 2013-09-13</td>
+            <td><a  href="#">删除</a>&nbsp;&nbsp;&nbsp;<a  href="#">修改</a></td>
+          </tr>
+          <tr>
+            <td> <a href="defect.html">LTYTHREE-39</a></td>
+            <td>当多次暂停、重新启动同一个产品后，在资源报表中查询到的历史"暂停结束日期"显示有误，与数据库里的数据不一致。</td>
+            <td> 贺鹏</td>
+            <td>孙杨</td>
+            <td> 低</td>
+            <td><span class="label label-success">Resolved</span></td>
+            <td> 已解决</td>
+            <td> 2013-09-08</td>
+            <td><a  href="#">删除</a>&nbsp;&nbsp;&nbsp;<a  href="#">修改</a></td>
+          </tr>
+          <tr>
+            <td><a href="defect.html"> LTYTHREE-38</a></td>
+            <td> 申请平台环境时虚拟机启动失败（tomcat后台日志不报错，界面返回"启动虚拟机失败"）</td>
+            <td> 贺鹏</td>
+            <td>李伟</td>
+            <td> 中</td>
+            <td><span class="label label-primary">Closed</span></td>
+            <td> 已解决</td>
+            <td> 2013-09-05</td>
+            <td><a  href="#">删除</a>&nbsp;&nbsp;&nbsp;<a  href="#">修改</a></td>
+          </tr>
+           <tr>
+            <td> <a href="defect.html">LTYTHREE-37</a></td>
+            <td> 资源统计——对象存储服务统计图显示数据错误</td>
+            <td> 贺鹏</td>
+            <td>李伟</td>
+            <td> 中</td>
+            <td><span class="label label-primary">Closed</span></td>
+            <td> 已解决</td>
+            <td> 2013-09-01</td>
+            <td><a  href="#">删除</a>&nbsp;&nbsp;&nbsp;<a  href="#">修改</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="panel-footer  text-right">
+    <ul class="pagination" style="margin:0px;">
+      <li class="disabled"><a href="#">«</a></li>
+      <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">»</a></li>
+    </ul>
+  </div>
+  <!--panel-footer--> 
+  <!--panel-footer--> 
+</div>
+<!--panel panel-default--> 
+<!--弹出框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">创建缺陷</h4>
+      </div>
+      <!--panel-heading-->
+      <div class="panel-body row">
+        <form class="bs-example form-horizontal">
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">概要：</label>
+            <div class="col-md-7 col-sm-6">
+              <input type="text" class="form-control"  >
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">优先级：</label>
+            <div class="col-md-7 col-sm-6">
+              <select class="form-control">
+                <option>中</option>
+                <option>高</option>
+                <option>低</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4  control-label">缺陷类型：</label>
+            <div class="col-md-7 col-sm-6">
+              <select class="form-control">
+                <option>功能问题</option>
+                <option>界面问题</option>
+                <option>数据问题</option>
+                <option>流程错误</option>
+                <option>性能问题</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">逾期日期：</label>
+            <div class="col-md-7 col-sm-6">
+              <input type="text" class="form-control" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">模块：</label>
+            <div class="col-md-7 col-sm-6">
+              <select class="form-control">
+                <option>服务中心</option>
+                <option>内容管理</option>
+                <option>门户首页</option>
+                <option>运维管理</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">影响版本：</label>
+            <div class="col-md-7 col-sm-6">
+              <select class="form-control">
+                <option>下拉选择类别</option>
+                <option>v1.00</option>
+                <option>v2.00</option>
+                <option>v3.00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">修复版本：</label>
+            <div class="col-md-7 col-sm-6">
+              <select class="form-control">
+                <option>下拉选择类别</option>
+                <option>v1.00</option>
+                <option>v2.00</option>
+                <option>v3.00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">开发者：</label>
+            <div class="col-md-7 col-sm-6">
+              <select class="form-control">
+                <option>下拉选择类别</option>
+                <option>蔡亚丽</option>
+                <option>刘宁</option>
+                <option>代伟</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">添加附件：</label>
+            <div class="col-md-7 col-sm-6">
+              <input type="file" id="exampleInputFile">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">描述：</label>
+            <div class="col-md-7 col-sm-6">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--panel-body-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">取消</button>
+      </div>
+      
+      <!-- /.modal-content --> 
+    </div>
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--弹出框--> 
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>

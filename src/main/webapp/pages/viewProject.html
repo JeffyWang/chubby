@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Yali Cai">
+<title>ViewProject</title>
+<!-- Bootstrap core CSS -->
+<link href="../css/custom-bootstrap.css" rel="stylesheet">
+<!--font-awesome-->
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome.min.css"/>
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.css"/>
+<!-- Custom styles for this template -->
+<link href="../css/style.css" rel="stylesheet">
+<style type="text/css">
+form p {
+	padding-top:7px;
+}
+</style>
+</head>
+<body class="Iframe_body">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class="icon-bar-chart"></i>查看项目</h3>
+  </div>
+  <!--panel-heading-->
+  <div class="panel-body">
+    <form class="bs-example form-horizontal" style="margin-top:10px;">
+      <div class="form-group">
+        <label class="col-md-3 col-sm-3 control-label">项目名称：</label>
+        <div class="col-md-2 col-sm-2">
+          <p> 综合云平台管理系统</p>
+        </div>
+        <label class="col-md-3 col-sm-3 control-label">创建人：</label>
+        <div class="col-md-2 col-sm-2">
+          <p> 查明</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-3  control-label">创建时间：</label>
+        <div class="col-md-2 col-sm-2">
+          <p> 2013-08-15</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-3  control-label">当前阶段：</label>
+        <div class="col-md-2 col-sm-2">
+          <p> 测试</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-3  control-label">项目人员：</label>
+        <div class="col-md-8 col-sm-7">
+          <table class="table table-bordered table-striped" id="table_01">
+            <thead>
+              <tr>
+                <th>用户</th>
+                <th>角色</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>查明</td>
+                <td>项目经理</td>
+              </tr>
+                <tr>
+                <td>王慧</td>
+                <td>测试经理</td>
+              </tr>
+                <tr>
+                <td>孙杨</td>
+                <td>测试人员</td>
+              </tr>
+                <tr>
+                <td>李伟</td>
+                <td>测试人员</td>
+              </tr>
+                <tr>
+                <td>贺鹏</td>
+                <td>开发人员</td>
+              </tr>
+               <tr>
+                <td>何志江</td>
+                <td>开发人员</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-3  control-label">项目计划：</label>
+        <div class="col-md-8 col-sm-7">
+         <div class="table-responsive">
+           <table class="table table-bordered table-striped" id="table_01">
+      <thead>
+        <tr>
+          <th>测试计划</th>
+          <th >描述信息</th>
+          <th style="width:10%;">发布日期</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> <a href="#">中国联通综合云平台二期AE2计量管理</a></td>
+          <td>针对系统功能——产品获取、报表查询、报表导出、资源统计、资源统计展示、计量配置等进行相应测试工作</td>
+          <td> 2013-08-18</td>
+        </tr>
+        
+       
+      </tbody>
+    </table>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-3 control-label">需求数：</label>
+        <label class="col-md-1 col-sm-1 control-label"> <a href="requirementsManagement.html"> 6</a> </label>
+        <label class="col-md-2 col-sm-2 control-label">用例数：</label>
+        <label class="col-md-1 col-sm-1 control-label"> <a href="testingCaseManagement.html"> 14</a> </label>
+        <label class="col-md-2 col-sm-2 control-label">缺陷数：</label>
+        <label class="col-md-1 col-sm-1 control-label"> <a href="defectManagement.html"> 4</a> </label>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-3  control-label">描述：</label>
+        <div class="col-md-8 col-sm-7">
+          <textarea class="form-control" rows="3" placeholder=""></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-3 col-sm-3  col-md-offset-6 col-sm-offset-6"><a class="btn btn-primary" href="projectManagement.html">返回</a></div>
+      </div>
+    </form>
+  </div>
+  <!--panel-body--> 
+</div>
+<!--panel panel-default-->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class="icon-bar-chart"></i>用例统计</h3>
+  </div>
+  <!--panel-heading-->
+  <div class="panel-body"> 
+   <div class="table-responsive">
+  <table class="table table-bordered table-striped" id="table_01">
+            <thead>
+              <tr>
+                <th>总数</th>
+                <th>尚未执行</th>
+                <th>[%]</th>
+                <th>通过</th>
+                <th>[%]</th>
+                <th>失败</th>
+                <th>[%]</th>
+                <th>锁定</th>
+                <th>[%]</th>
+                <th>已完成[%]</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>14</td>
+                <td>3</td>
+                <td>21.00</td>
+                <td>9</td>
+                <td>64.00</td>
+                <td>2</td>
+                <td>15.00</td>
+                <td>0</td>
+                <td>0.00</td>
+                <td>78.00</td>
+              </tr>
+             
+            </tbody>
+          </table>
+          </div>
+  </div>
+  <!--panel-body--> 
+</div>
+<!--panel panel-default-->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class="icon-bar-chart"></i>用例优先级统计</h3>
+  </div>
+  <!--panel-heading-->
+  <div class="panel-body">  
+  <div class="table-responsive">
+  <table class="table table-bordered table-striped" id="table_01">
+            <thead>
+              <tr>
+                <th>优先级</th>
+                <th>总数</th>
+                <th>尚未执行</th>
+                <th>[%]</th>
+                <th>通过</th>
+                <th>[%]</th>
+                <th>失败</th>
+                <th>[%]</th>
+                <th>锁定</th>
+                <th>[%]</th>
+                <th>已完成[%]</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>高</td>
+                <td>0</td>
+                <td>0</td>
+                <td>否/是</td>
+                <td>0</td>
+                <td>否/是</td>
+                <td>0</td>
+                <td>否/是</td>
+                <td>0</td>
+                <td>否/是</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>中</td>
+                <td>13</td>
+                <td>2</td>
+                <td>15.00</td>
+                <td>9</td>
+                <td>70.00</td>
+                <td>2</td>
+                <td>15.00</td>
+                <td>0</td>
+                <td>0</td>
+                <td>85.00</td>
+              </tr>
+              <tr>
+                <td>低</td>
+                <td>1</td>
+                <td>1</td>
+                <td>100.00</td>
+                <td>0</td>
+                <td>0.00</td>
+                <td>0</td>
+                <td>0.00</td>
+                <td>0</td>
+                <td>0.00</td>
+                <td>0.00</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+           </div>
+  <!--panel-body--> 
+</div>
+
+<!--panel panel-default-->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class="icon-bar-chart"></i>执行进度统计</h3>
+  </div>
+  <!--panel-heading-->
+  <div class="panel-body"> 
+   <div class="table-responsive">
+  <table class="table table-bordered table-striped" id="table_01">
+      <thead>
+        <tr>
+           <th>名称</th>
+          <th>日期</th>
+          <th>开始日期</th>
+          <th>完成率</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> 产品获取</td>
+        
+          <td>2013-9-26</td>
+          <td> 2013-9-1</td>
+           <td>100%</td>
+          <td><a  href="#">删除</a>&nbsp;&nbsp;&nbsp;<a  href="#">修改</a>&nbsp;&nbsp;&nbsp;<a  href="#" data-toggle="modal" data-target="#myModal">查看</a></td>
+        </tr>
+          <tr>
+           <td> 报表导出</td>
+        
+          <td>2013-9-26</td>
+          <td> 2013-9-1</td>
+           <td>80%</td>
+          <td><a  href="#">删除</a>&nbsp;&nbsp;&nbsp;<a  href="#">修改</a>&nbsp;&nbsp;&nbsp;<a  href="#" data-toggle="modal" data-target="#myModal">查看</a></td>
+        </tr>
+        <tr>
+          <td> 资源统计</td>
+         
+          <td>2013-9-26</td>
+          <td> 2013-9-1</td>
+           <td>90%</td>
+          <td><a  href="#">删除</a>&nbsp;&nbsp;&nbsp;<a  href="#">修改</a>&nbsp;&nbsp;&nbsp;<a  href="#" data-toggle="modal" data-target="#myModal">查看</a></td>
+        </tr>
+      </tbody>
+    </table>
+          </div>
+  
+   </div>
+  <!--panel-body--> 
+</div>
+<!--panel panel-default--> 
+
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>
