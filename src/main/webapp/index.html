@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Index-CloudTest</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/custom-bootstrap.css" rel="stylesheet">
+    <!--font-awesome-->
+    <link  type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link  type="text/css" rel="stylesheet" href="css/font-awesome-ie7.css"/>
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="row">
+        <div class="col-md-6">
+            <h2></h2>
+        </div>
+        <div class="col-md-6">
+            <div class="btn-group pull-right" style="margin-top:20px;">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i>Admin <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#"><i class="icon-user"></i>账号设置</a></li>
+                    <li><a href="#"><i class="icon-cog"></i>信息设置</a></li>
+                    <li><a href="#"><i class="icon-question"></i>帮助信息</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="icon-signout"></i>退 出</a></li>
+                </ul>
+            </div>
+            <!--btn-group-->
+        </div>
+        <!--col-md-6-->
+    </div>
+    <!--row-->
+</div>
+<!--header-->
+<div class="sidebar" style="overflow-y:auto; overflow-x:hidden;">
+    <div class="logo"><img src="img/logo01.png"></div>
+    <!--logo-->
+    <nav class="navbar" role="navigation">
+        <!--navbar-header-->
+        <ul class="nav nav-pills nav-stacked">
+            <li  class="active"><a href="pages/poolsManagement.html"  target="contentFrame" data-toggle="collapse"  data-target="#navbar-nemu02" data-parent="#navbar"><i class="icon-th"></i>资源池管理<i class="icon-caret-right pull-right"></i> </a></li>
+            <!--<ul  id="navbar-nemu02" class="nav-pills  nav nav-stacked "  style="height:0; overflow:hidden;" >-->
+                <!--<li class="navmenu02"><a href="pages/projectManagement.html"  target="contentFrame"><i class="icon-th-large"></i>服务系统管理</a></li>-->
+                <!--<li class="navmenu02"><a href="pages/planManagement.html"  target="contentFrame"><i class="icon-align-center"></i>资源池管理</a></li>-->
+                <!--<li class="navmenu02"><a href="pages/requirementsManagement.html"  target="contentFrame"><i class="icon-th-large"></i>服务</a></li>-->
+                <!--<li class="navmenu02"><a href="pages/testingCaseManagement.html" target="contentFrame"><i class="icon-list-ul "></i>用例管理</a></li>-->
+                <!--<li class="navmenu02"><a href="pages/defectManagement.html" target="contentFrame"><i class="icon-list-ul "></i>缺陷管理</a></li>-->
+                <!--<li class="navmenu02"><a href="pages/versionManagement.html"  target="contentFrame"><i class="icon-list-ol"></i>版本管理</a></li>-->
+                <!--<li class="navmenu02"><a href="pages/testReportManagement.html"  target="contentFrame"><i class="icon-list-ol"></i>测试报告管理</a></li>-->
+            <!--</ul>-->
+            <li ><a  data-toggle="collapse"  data-target="#navbar-nemu03" data-parent="#navbar"><i class="icon-align-justify "></i>服务管理<i class="icon-caret-right pull-right"></i></a></li>
+            <!--<ul  id="navbar-nemu03" class="nav nav-pills nav-stacked"   style="height:0; overflow:hidden;">-->
+                <!--<li class="navmenu02"><a href="pages/resourceManagement.html"  target="contentFrame"><i class="icon-list-alt" target="contentFrame"></i>资源管理</a></li>-->
+                <!--<li class="navmenu02"><a href="pages/mirrorManagement.html"  target="contentFrame"><i class="icon-table" target="contentFrame"></i>镜像管理</a></li>-->
+                <!--<li class="navmenu02"><a href="pages/testToolManagement.html"  target="contentFrame"><i class="icon-table" target="contentFrame"></i>测试工具管理</a></li>-->
+                <!--<li class="navmenu02"><a href="pages/resourceStatistics.html"  target="contentFrame"><i class="icon-bar-chart" target="contentFrame"></i>资源统计信息</a></li>-->
+            <!--</ul>-->
+            <li><a href="pages/test.html"  target="contentFrame"><i class="icon-user"></i>测试</a></li>
+            <li><a href="pages/shoppingcart.html"  target="contentFrame"><i class="icon-user"></i>购物车</a></li>
+        </ul>
+        <!--collapse navbar-collapse navbar-ex1-collapse-->
+    </nav>
+    <!--navbar-->
+</div>
+<!--sidebar-->
+<div class="content">
+    <div class="content-menu">
+        <div class="pull-right btn-group ">
+            <button type="button" class="btn btn-warning">综合云平台计量管理 </button>
+            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">综合云平台监控管理</a></li>
+            </ul>
+        </div>
+        <!--pull-right btn-group -->
+    </div>
+    <!--content-menu-->
+    <!--Iframe嵌入页面-->
+    <div class="iframebox" style="width:100%; height:auto;" id="ContentBox">
+        <iframe id="contentLayerFrame" src="pages/projectManagement.html" frameborder=0 name="contentFrame" style="width:100%; height:auto; overflow:hidden;" > </iframe>
+    </div>
+    <!--嵌入页面end-->
+
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" defer="defer">
+
+        //被嵌入的Iframe根据不同的屏幕高度自适应
+        $(window).load(function () {
+
+            var header = $(".header");
+            var headerH = header.height();
+
+            var body = $("body");
+            var bodyW = body.width();
+            var bodyH = body.height();
+
+            var Win = $(document);
+            var WW = $(document).width();
+            var WH = $(window).height();
+
+            var TargetBox = $("#contentLayerFrame");
+            var isChrome = navigator.userAgent.toLowerCase().match(/chrome/) != null;
+
+            var Content_frame = function() {
+                var WH = $(window).height();
+                if (isChrome) {
+                    TargetBox.css({ "height": (WH - headerH) - 70 + "px"});
+                }else{
+                    TargetBox.css({ "height": (WH - headerH) - 65 + "px"});
+                }
+            };
+            Content_frame();
+            $(window).resize(function () {
+                Content_frame();
+            });
+        });
+    </script>
+</div>
+<!--content-->
+</body>
+</html>

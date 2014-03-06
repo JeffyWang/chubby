@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Yali Cai">
+<title>Index-DataPlatform</title>
+<!-- Bootstrap core CSS -->
+<link href="../css/custom-bootstrap.css" rel="stylesheet">
+<!--font-awesome-->
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome.min.css"/>
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.css"/>
+<!-- Custom styles for this template -->
+<link href="../css/style.css" rel="stylesheet">
+</head>
+<body class="Iframe_body">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class=" icon-trello"></i>测试工具管理</h3>
+  </div>
+  <!--panel-heading-->
+  <div class="panel-body">
+    <div class="row" style="padding-bottom:20px;">
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">上传</button>
+      <!--col-md-2-->
+      <div class="col-md-3 col-sm-6  pull-right">
+        <div class="input-group">
+          <input type="text" class="form-control"  placeholder="订阅主题">
+          <span class="input-group-btn">
+          <button class="btn btn-primary" type="button">检索</button>
+          </span> </div>
+        <!-- /input-group --></div>
+      <!--col-md-2--> 
+    </div>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped" id="table_01">
+      <thead>
+        <tr>
+          <th>工具名称</th>
+          <th>版本号</th>
+            <th  style="width:14%;">编程语言</th>
+          <th>类别</th>
+          <th  style="width:34%;">备注</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>testLink</td>
+          <td>2.0</td>
+             <td>php+MySQL</td>
+          <td>用例管理</td>
+          <td>基于web的开源测试用例管理系统，主要功能是测试用例的创建、管理和执行，并且还提供了一些简单的统计功能；可与bugfree整合一起使用</td>
+          <td><a  href="#">下载</a>&nbsp;&nbsp;&nbsp;<a  href="#">删除</a></td>
+        </tr>
+        <tr>
+          <td>SELENIUM</td>
+          <td>1.0</td>
+           <td>支持JAVA,.NET, Perl, Python, Ruby等编程语言</td>
+          <td>自动化测试</td>
+          <td>用于Web应用程序测试的工具开源工具</td>
+          <td><a href="#">下载</a>&nbsp;&nbsp;&nbsp;<a  href="#">删除</a></td>
+        </tr>
+        <tr>
+          <td>Xunit(JUnit;PyUnit;Phpunit)</td>
+          <td>1.0</td>
+           <td>x语言</td>
+          <td>配置管理</td>
+          <td>大部分语言都有其对应unit测试框架</td>
+          <td><a href="#">下载</a>&nbsp;&nbsp;&nbsp;<a  href="#">删除</a></td>
+        </tr>
+         <tr>
+          <td>Jmeter</td>
+          <td>1.0</td>
+           <td>支持JAVA</td>
+          <td>性能测试</td>
+          <td>免费的性能及压力测试工具</td>
+          <td><a href="#">下载</a>&nbsp;&nbsp;&nbsp;<a  href="#">删除</a></td>
+        </tr>
+        <tr>
+          <td>SVN</td>
+          <td>1.0</td>
+           <td>x语言</td>
+          <td>配置管理</td>
+          <td>免费的文档及版本控制管理工具
+可用于产品、版本、需求、文档模板、测试知识库等文档的管理</td>
+          <td><a href="#">下载</a>&nbsp;&nbsp;&nbsp;<a  href="#">删除</a></td>
+        </tr>
+       <tr>
+          <td>bugFree</td>
+          <td>1.0</td>
+           <td>java or php+MySQL</td>
+          <td>缺陷管理库</td>
+          <td>简单实用、免费并且开放源代码</td>
+          <td><a href="#">下载</a>&nbsp;&nbsp;&nbsp;<a  href="#">删除</a></td>
+        </tr>
+        
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <div class="panel-footer  text-right">
+    <ul class="pagination" style="margin:0px;">
+      <li class="disabled"><a href="#">«</a></li>
+      <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">»</a></li>
+    </ul>
+  </div>
+  <!--panel-footer--> 
+  <!--panel-footer--> 
+</div>
+<!--panel panel-default--> 
+<!--弹出框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">测试工具上传</h4>
+      </div>
+      <!--panel-heading-->
+      <div class="panel-body row">
+        <form class="bs-example form-horizontal">
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">名称：</label>
+            <div class="col-md-7 col-sm-6">
+              <input type="text" class="form-control"  placeholder="测试工具名称">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4  control-label">版本号：</label>
+            <div class="col-md-7 col-sm-6">
+              <input type="text" class="form-control"  placeholder="测试工具版本号">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">类别：</label>
+            <div class="col-md-7 col-sm-6">
+              <select class="form-control">
+                <option>下拉选择类别</option>
+                <option>用例管理</option>
+                <option>自动化测试</option>
+                <option>配置管理</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">备注：</label>
+            <div class="col-md-7 col-sm-6">
+              <textarea class="form-control" rows="3" placeholder="备注信息"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">文件：</label>
+            <div class="col-md-7 col-sm-6">
+             <input type="file" id="exampleInputFile">
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--panel-body-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">取消</button>
+      </div>
+      
+      <!-- /.modal-content --> 
+    </div>
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--弹出框--> 
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>

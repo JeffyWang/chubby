@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Yali Cai">
+<title>resourceManagement</title>
+<!-- Bootstrap core CSS -->
+<link href="../css/custom-bootstrap.css" rel="stylesheet">
+<!--font-awesome-->
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome.min.css"/>
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.css"/>
+<!-- Custom styles for this template -->
+<link href="../css/style.css" rel="stylesheet">
+</head>
+<body class="Iframe_body">
+<!--以上为必须要的-->
+
+<!--分栏框开始-->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"> <i class="icon-list"></i>资源管理</h3>
+  </div>
+  <!--panle-heading-->
+  <div class="panel-body">
+    <div class="row" style="padding-bottom:20px;">
+     <form class="form-horizontal" role="form">
+        <div class="col-md-2 col-sm-2" style="padding:0;">
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">申请</button>
+        </div>     
+
+        <div class="col-md-1 col-sm-2 pull-right" style="padding:0;">
+          <select class="form-control">
+            <option>查明</option>
+            <option>王慧</option>
+            <option>贺鹏</option>
+            <option>何志江</option>
+          </select>
+        </div>
+        <label class="col-md-1 col-sm-2 pull-right control-label">申请人：</label>  
+
+        <div class="col-md-1 col-sm-2 pull-right" style="padding:0;">
+          <select class="form-control">
+            <option>运行中</option>
+            <option>审批中</option>
+            <option>停止中</option>
+            <option>启动中</option>
+          </select>
+        </div>
+        <label class="col-md-2 col-sm-2 pull-right control-label">资源状态：</label>          
+       
+
+      </form>
+    </div>
+    <div class="table-responsive">
+    <table class="table table-bordered table-striped" id="table_01">
+      <thead>
+        <tr>
+          <th>项目名称</th>
+          <th>资源名称</th>
+          <th>CPU</th>
+          <th>内存</th>
+          <th>磁盘</th>
+          <th>IP地址</th>
+          <th>镜像</th>
+          <th>申请人</th>
+          <th>状态</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>综合云平台监控管理</td>
+          <td>计量环境3</td>
+          <td>2</td>
+          <td>4G</td>
+          <td>500G</td>
+          <td>192.168.0.4</td>
+          <td>Windows 7</td>
+          <td>何志江</td>
+          <td><span class="label label-success">运行中</span></td>
+          <td><a href="#" style="margin-right:10px;">启动</a><a href="#" style="margin-right:10px;">停止</a>
+          <a href="#" style="margin-right:10px;">生成镜像</a><a data-toggle="modal" data-target="#myModal1"href="#" style="margin-right:10px;">备份</a>
+          <a href="#" style="margin-right:10px;">控制台</a><a href="#" style="margin-right:10px;">删除</a></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>&nbsp;&nbsp;&nbsp;</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>&nbsp;&nbsp;&nbsp;</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>&nbsp;&nbsp;&nbsp;</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>&nbsp;&nbsp;&nbsp;</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <!--panel-body--> 
+   <div class="panel-footer  text-right">
+  <ul class="pagination" style="margin:0px;">
+        <li><a href="resourceManagement.html">«</a></li>
+        <li><a href="resourceManagement.html">1 <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">»</a></li>
+     </ul>
+  </div>
+  <!--panel-footer--> 
+</div>
+
+<!--分栏框结束-->
+
+<!--分栏框开始-->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"> <i class="icon-list"></i>备份列表</h3>
+  </div>
+  <!--panle-heading-->
+  <div class="panel-body">
+
+    <table class="table table-bordered table-striped" id="table_01">
+      <thead>
+        <tr>
+          <th>名称</th>
+          <th>源虚拟机</th>
+          <th>描述</th>
+          <th>创建时间</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>备份1</td>
+          <td>Windows 7</td>
+          <td>发的发的的丰富的</td>
+          <td>2013-09-11</td>
+          <td><a class="btn btn-success" href="#">恢复</a></td>
+        </tr>
+        <tr>
+          <td>备份2</td>
+          <td>Windows 7</td>
+          <td>2</td>
+          <td>2013-09-02</td>
+          <td><a class="btn btn-success" href="#">恢复</a></td>
+        </tr>
+        <tr>
+          <td>备份3</td>
+          <td>Windows 7</td>
+          <td>2</td>
+          <td>2013-08-25</td>
+          <td><a class="btn btn-success" href="#">恢复</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--panel-body--> 
+</div>
+
+<!--分栏框结束-->
+
+
+
+<!--弹出框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">资源申请</h4>
+      </div>
+      
+        <!--panel-heading-->
+  <div class="panel-body row">
+    <form class="bs-example form-horizontal" style="margin-top:10px;">
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">项目名称：</label>
+        <div class="col-md-7 col-sm-6">
+          <select class="form-control">
+            <option>综合云平台计量管理</option>
+            <option>综合云平台监控管理</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">资源名称：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">CPU：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">内存：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">磁盘：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">镜像：</label>
+        <div class="col-md-7 col-sm-6">
+          <select class="form-control">
+            <option>Windows 7</option>
+            <option>Win+Testlink</option>
+            <option>Win7+SELENIUM</option>
+            <option>Win7+Jmeter</option>
+            <option>Linux</option>
+            <option>Linux+testLink</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">虚拟机台数：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="1">
+        </div>
+      </div>      
+    </form>
+    <p class="pull-right" style="margin:0;">说明：当您申请后需要等待管理员审批才能使用。</p>
+  </div>
+  <!--panel-body--> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!--弹出框--> 
+
+
+
+<!--弹出框备份-->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">备份</h4>
+      </div>
+      
+        <!--panel-heading-->
+  <div class="panel-body row">
+    <form class="bs-example form-horizontal" style="margin-top:10px;">
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">名称：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">描述：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+    </form>
+  </div>
+  <!--panel-body--> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--弹出框--> 
+
+
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>

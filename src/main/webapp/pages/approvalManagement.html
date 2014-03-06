@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Yali Cai">
+<title>approvalManagement</title>
+<!-- Bootstrap core CSS -->
+<link href="../css/custom-bootstrap.css" rel="stylesheet">
+<!--font-awesome-->
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome.min.css"/>
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.css"/>
+<!-- Custom styles for this template -->
+<link href="../css/style.css" rel="stylesheet">
+</head>
+<body class="Iframe_body">
+<!--以上为必须要的-->
+<!--分栏框开始-->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"> <i class="icon-list"></i>审批管理</h3>
+  </div>
+  <!--panle-heading-->
+  <div class="panel-body">
+   <div class="table-responsive">
+    <table class="table table-bordered table-striped" id="table_01">
+      <thead>
+        <tr>
+          <th>编号</th>
+          <th>申请人</th>
+          <th>申请类别</th>
+          <th>资源</th>
+          <th>申请时间</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>李伟</td>
+          <td>资源申请</td>
+          <td>资源名</td>
+          <td>2013-9-11</td>
+          <td><a class="btn btn-success" href="#">通过</a>&nbsp;&nbsp;&nbsp;<a class="btn btn-warning" href="#">拒绝</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>查明</td>
+          <td>用户创建</td>
+          <td>用户名</td>
+          <td>2013-9-8</td>
+          <td><a class="btn btn-success" href="#">通过</a>&nbsp;&nbsp;&nbsp;<a class="btn btn-warning" href="#">拒绝</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>查明</td>
+          <td>项目创建</td>
+          <td>项目名</td>          
+          <td>2013-8-25</td>
+          <td><a class="btn btn-success" href="#">通过</a>&nbsp;&nbsp;&nbsp;<a class="btn btn-warning" href="#">拒绝</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>查明</td>
+          <td>用户创建</td>
+          <td>用户名</td>
+          <td>2013-8-23</td>
+          <td><a class="btn btn-success" href="#">通过</a>&nbsp;&nbsp;&nbsp;<a class="btn btn-warning" href="#">拒绝</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>孙杨</td>
+          <td>资源申请</td>
+          <td>资源名</td>
+          <td>2013-8-22</td>
+          <td><a class="btn btn-success" href="#">通过</a>&nbsp;&nbsp;&nbsp;<a class="btn btn-warning" href="#">拒绝</a></td>
+        </tr>
+      </tbody>
+    </table>
+   </div>
+  </div>
+  <!--panel-body--> 
+   <div class="panel-footer  text-right">
+  <ul class="pagination" style="margin:0px;">
+        <li class="disabled"><a href="#">«</a></li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">»</a></li>
+     </ul>
+  </div>
+  <!--panel-footer--> 
+</div>
+
+<!--分栏框结束-->
+
+
+
+<!--弹出框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">资源申请</h4>
+      </div>
+      
+        <!--panel-heading-->
+  <div class="panel-body row">
+    <form class="bs-example form-horizontal" style="margin-top:10px;">
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">名称：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">CPU：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">内存：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">磁盘：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">镜像：</label>
+        <div class="col-md-7 col-sm-6">
+          <select class="form-control">
+            <option>Windows 7</option>
+            <option>Win+Testlink</option>
+            <option>环境复现</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">项目名称：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+    </form>
+    <p class="pull-right" style="margin:0;">说明：当您申请后需要等待管理员审批才能使用。</p>
+  </div>
+  <!--panel-body--> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning">取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!--弹出框--> 
+
+
+
+<!--弹出框备份-->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">备份</h4>
+      </div>
+      
+        <!--panel-heading-->
+  <div class="panel-body row">
+    <form class="bs-example form-horizontal" style="margin-top:10px;">
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">名称：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">描述：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+    </form>
+    <p class="pull-right" style="margin:10px 0 0 0;">说明：当您申请后需要等待管理员审批才能使用。</p>
+  </div>
+  <!--panel-body--> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning">取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--弹出框--> 
+
+<!--弹出框备份-->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">备份</h4>
+      </div>
+      
+        <!--panel-heading-->
+  <div class="panel-body row">
+    <form class="bs-example form-horizontal" style="margin-top:10px;">
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">名称：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">描述：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+    </form>
+    <p class="pull-right" style="margin:10px 0 0 0;">说明：当您申请后需要等待管理员审批才能使用。</p>
+  </div>
+  <!--panel-body--> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning">取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--弹出框--> 
+
+<!--弹出框备份-->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">备份</h4>
+      </div>
+      
+        <!--panel-heading-->
+  <div class="panel-body row">
+    <form class="bs-example form-horizontal" style="margin-top:10px;">
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">名称：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">描述：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+    </form>
+    <p class="pull-right" style="margin:10px 0 0 0;">说明：当您申请后需要等待管理员审批才能使用。</p>
+  </div>
+  <!--panel-body--> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning">取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--弹出框--> 
+
+
+<!--弹出框备份-->
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">备份</h4>
+      </div>
+      
+        <!--panel-heading-->
+  <div class="panel-body row">
+    <form class="bs-example form-horizontal" style="margin-top:10px;">
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">名称：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">描述：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+    </form>
+    <p class="pull-right" style="margin:10px 0 0 0;">说明：当您申请后需要等待管理员审批才能使用。</p>
+  </div>
+  <!--panel-body--> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning">取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--弹出框--> 
+
+
+<!--弹出框备份-->
+<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">备份</h4>
+      </div>
+      
+        <!--panel-heading-->
+  <div class="panel-body row">
+    <form class="bs-example form-horizontal" style="margin-top:10px;">
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">名称：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-3 col-sm-4 control-label">描述：</label>
+        <div class="col-md-7 col-sm-6">
+          <input type="text" class="form-control"  placeholder="">
+        </div>
+      </div>
+    </form>
+    <p class="pull-right" style="margin:10px 0 0 0;">说明：当您申请后需要等待管理员审批才能使用。</p>
+  </div>
+  <!--panel-body--> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning">取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--弹出框--> 
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html ng-app='myApp'>
+<head>
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/controllers.js"></script>
+</head>
+<body>
+<div ng-controller='HelloController'>
+    <p>{{greeting.text}}, World</p>
+    <p>{{greeting.test2}}</p>
+    <p>{{'ni xiang shuo shen me'}}</p>
+    <input ng-model='greeting.input'/>
+    <p>{{greeting.input}},  you insert</p>
+</div>
+<div>----------------------------------------------------------</div>
+<div ng-controller='personController'>
+    <ul ng-repeat='person in persons'>
+        <li>{{person.name}}</li>
+        <li>{{person.age | currency}}</li>
+        <li>{{person.sex}}</li>
+        <li>{{person.age * person.code}}</li>
+        <input ng-model='person.code'>
+        <button ng-click='remove($index)'>Remove</button>
+    </ul>
+</div>
+<!--<div>----------------------------------------------------------</div>-->
+<!--<div ng-controller='TextController'>-->
+    <!--<p>{{someText.message}}</p>-->
+<!--</div>-->
+<div>----------------------------------------------------------</div>
+<form ng-controller="SomeController">
+    <input type="checkbox" ng-model="check.youCheckedIt" >
+    <button ng-click='checkIt()'>Get</button>
+</form>
+<div>----------------------------------------------------------</div>
+<form ng-controller='StartUpController'>
+    <!--String: <input ng-change='computeNeeded()' ng-model='funding.startingEstimate'/>-->
+    String: <input  ng-model='funding.startingEstimate'/>
+    Recommendation: {{funding.needed}}
+</form>
+</body>
+</html>

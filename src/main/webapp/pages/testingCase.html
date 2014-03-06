@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Yali Cai">
+<title>testingCase</title>
+<!-- Bootstrap core CSS -->
+<link href="../css/custom-bootstrap.css" rel="stylesheet">
+<!--font-awesome-->
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome.min.css"/>
+<link  type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.css"/>
+<!-- Custom styles for this template -->
+<link href="../css/style.css" rel="stylesheet">
+<style type="text/css">
+form p {
+	padding-top:7px;
+}
+</style>
+</head>
+<body class="Iframe_body">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class="icon-th-large"></i>用例详情</h3>
+  </div>
+  <!--panel-heading-->
+  <div class="panel-body row">
+    <form class="bs-example form-horizontal">
+      <div class="form-group" style="margin:5px;">
+        <label class="col-md-2 col-xs-6 col-sm-3 control-label">用例名称：</label>
+        <div class="col-md-3 col-xs-6 col-sm-3">
+          <p>LTY-2239:产品获取——资源类型获取</p>
+        </div>
+        <label class="col-md-2 col-xs-6 col-sm-3 control-label">等级：</label>
+        <div class="col-md-3 col-xs-6 col-sm-3">
+          <p>中</p>
+        </div>
+      </div>
+      <div class="form-group" style="margin:5px;">
+        <label class="col-md-2 col-xs-6 col-sm-3 control-label">创建人：</label>
+        <div class="col-md-3 col-xs-6 col-sm-3 ">
+          <p>李伟</p>
+        </div>
+        <label class="col-md-2 col-xs-6 col-sm-3 control-label">执行人：</label>
+        <div class="col-md-3 col-xs-6 col-sm-3">
+          <p>李伟</p>
+        </div>
+      </div>
+      <div class="form-group" style="margin:5px;">
+        <label class="col-md-2 col-xs-6 col-sm-3 control-label">创建时间：</label>
+        <div class="col-md-3 col-xs-6 col-sm-3">
+          <p>2013-09-12</p>
+        </div>
+        <label class="col-md-2 col-xs-6 col-sm-3 control-label">修改时间：</label>
+        <div class="col-md-3 col-xs-6 col-sm-3">
+          <p>2013-09-12</p>
+        </div>
+      </div>
+      <div class="form-group" style="margin:5px;">
+        <label class="col-md-2 col-xs-6 col-sm-3 control-label">前提：</label>
+        <div class="col-md-3 col-xs-6 col-sm-3">
+          <p> 管理员登录系统</p>
+        </div>
+        <label class="col-md-2 col-xs-6 col-sm-3 control-label">摘要：</label>
+        <div class="col-md-3 col-xs-6 col-sm-3">
+          <p></p>
+        </div>
+      </div>
+      <div class=" col-md-6 col-md-offset-5 col-xs-6"> <a class="btn btn-success" href="testingCaseManagement.html">&nbsp;返回&nbsp;</a> </div>
+    </form>
+  </div>
+  <!--panel-body--> 
+</div>
+<!--panel panel-default-->
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"> <i class="icon-list-ol"></i>用例步骤</h3>
+  </div>
+  <!--panle-heading-->
+  <div class="panel-body">
+    <div class="row" style="padding-bottom:20px;"> </div>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+        </thead>
+        <tbody>
+          <tr>
+            <td>步骤号：</td>
+            <td>步骤动作：</td>
+            <td>期望结果：</td>
+            <td>操作：</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>在计量管理栏目点击资源报表</td>
+            <td> 资源类型初始化数据显示正确，默认为全部资源类型
+              
+              1）全部资源类型
+              
+              2）基础资源
+              
+              3）平台资源
+              
+              4）应用资源</td>
+            <td><a href="#"   data-toggle="modal" data-target="#myModal1" style="margin-right:10px;">添加</a><a href="#">删除</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!--panel-body-->
+  <div class="panel-footer  text-right">
+    <div class="col-md-4 col-sm-6 text-left" style="padding:0;">
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2">缺陷创建</button>
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal3" style="margin-left:10px;">关联到测试计划</button>
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal4" style="margin-left:10px;">关联到测试需求</button>
+    </div>
+    <ul class="pagination" style="margin:0px;">
+      <li class="disabled"><a href="#">«</a></li>
+      <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">»</a></li>
+    </ul>
+  </div>
+  <!--panel-footer--> 
+</div>
+
+<!--弹出框-->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">添加用例步骤</h4>
+      </div>
+      
+      <!--panel-heading-->
+      <div class="panel-body row">
+        <form class="bs-example form-horizontal" style="margin-top:10px;">
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">步骤动作：</label>
+            <div class="col-md-7 col-sm-6">
+              <textarea class="form-control" rows="3" placeholder=""></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4  control-label">期望结果：</label>
+            <div class="col-md-7 col-sm-6">
+              <textarea class="form-control" rows="3" placeholder=""></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--panel-body-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!--弹出框--> 
+
+<!--添加缺陷弹出框--> 
+<!--弹出框-->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">创建缺陷</h4>
+      </div>
+      <!--panel-heading-->
+      <div class="panel-body row">
+        <form class="bs-example form-horizontal">
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">项目：</label>
+            <div class="col-md-7 col-sm-6">
+              <select class="form-control">
+                <option>综合云管理计量管理</option>
+                <option>综合云管理监控管理</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">概要：</label>
+            <div class="col-md-7 col-sm-6">
+              <input type="text" class="form-control" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">优先级：</label>
+            <div class="col-md-7 col-sm-6">
+              <select class="form-control">
+                <option>高</option>
+                <option>中</option>
+                <option>低</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4  control-label">缺陷类型：</label>
+            <div class="col-md-7 col-sm-6">
+              <select class="form-control">
+                <option>功能问题</option>
+                <option>界面问题</option>
+                <option>数据问题</option>
+                <option>流程错误</option>
+                <option>性能问题</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">逾期日期：</label>
+            <div class="col-md-7 col-sm-6">
+              <input type="text" class="form-control" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">模块：</label>
+            <div class="col-md-7 col-sm-6">
+              <select class="form-control">
+                <option>服务中心</option>
+                <option>内容管理</option>
+                <option>门户首页</option>
+                <option>运维管理</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">影响版本：</label>
+            <div class="col-md-7 col-sm-6">
+              <select class="form-control">
+                <option>v1.00</option>
+                <option>v2.00</option>
+                <option>v3.00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">修复版本：</label>
+            <div class="col-md-7 col-sm-6">
+              <select class="form-control">
+                <option>v1.00</option>
+                <option>v2.00</option>
+                <option>v3.00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">开发者：</label>
+            <div class="col-md-7 col-sm-6">
+              <select class="form-control">
+                <option>贺鹏</option>
+                <option>何志江</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">添加附件：</label>
+            <div class="col-md-7 col-sm-6">
+              <input type="file" id="exampleInputFile">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-4 control-label">描述：</label>
+            <div class="col-md-7 col-sm-6">
+              <textarea class="form-control" rows="3" placeholder="描述"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--panel-body-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">取消</button>
+      </div>
+      
+      <!-- /.modal-content --> 
+    </div>
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--弹出框--> 
+
+<!--弹出框2结束--> 
+
+<!--弹出框3计划-->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">查看计划详情</h4>
+      </div>
+      <div class="modal-body">
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped" id="table_01">
+            <thead>
+              <tr>
+              <th><input type="checkbox"></th>
+                <th>测试计划</th>
+                <th >描述信息</th>
+                <th style="width:10%;">发布日期</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <td><input type="checkbox"></td>
+                <td> <a href="planManagement.html">综合云平台二期AE2计量管理</a></td>
+                <td>针对系统功能——产品获取、报表查询、报表导出、资源统计、资源统计展示、计量配置等进行相应测试工作</td>
+                <td> 2013-08-18</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--弹出框3--> 
+
+<!--弹出框4需求-->
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">关联测试需求</h4>
+      </div>
+      <div class="modal-body">
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped" id="table_01">
+      <thead>
+        <tr>
+        	<th><input type="checkbox"></th>
+          <th>编号</th>
+          <th>名称</th>     
+          <th>作者</th>     
+          <th>创建时间</th>  
+          <th>需求类别</th>        
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td><input type="checkbox"></td>
+          <td><a href="requirements.html">4.3.1</a></td>
+          <td>产品获取</td>
+          <td>查明</td>
+          <td>2013-09-12</td>
+          <td>功能性</td>
+        </tr>
+        <tr>
+        <td><input type="checkbox"></td>
+          <td><a href="requirements.html">4.3.2</a></td>
+          <td>报表查询</td>
+          <td>查明</td>
+          <td>2013-09-12</td>
+          <td>功能性</td>
+        </tr>
+        <tr>
+        <td><input type="checkbox"></td>
+          <td><a href="requirements.html">4.3.3</a></td>
+          <td>报表导出</td>
+          <td>查明</td>
+          <td>2013-09-12</td>
+          <td>功能性</td>
+        </tr>
+        <tr>
+        <td><input type="checkbox"></td>
+          <td><a href="requirements.html">4.3.4</a></td>
+          <td>资源统计</td>
+          <td>查明</td>
+          <td>2013-09-12</td>
+          <td>功能性</td>
+        </tr>
+        <tr>
+        <td><input type="checkbox"></td>
+          <td><a href="requirements.html">4.3.5</a></td>
+          <td>资源统计展示</td>
+          <td>查明</td>
+          <td>2013-09-12</td>
+          <td>功能性</td>
+        </tr>
+      </tbody>
+    </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn_02">确定</button>
+        <button type="button" class="btn btn-success">重置</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+<!-- /.modal --> 
+<!--弹出框4--> 
+
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>

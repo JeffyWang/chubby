@@ -1,0 +1,48 @@
+<html ng-app='myApp'>
+<head>
+    <script src="../js/angular.min.js"></script>
+    <title>Your Shopping Cart</title>
+    <script>
+        var myAppModule = angular.module("myApp", []);
+        myAppModule.controller('StartUpController',
+            function($scope) {
+                $scope.needed = 0;
+                $scope.computeNeeded = function() {
+                    $scope.needed = $scope.startingEstimate * 10;
+                };
+                $scope.requestFunding = function() {
+                    window.alert("Sorry, please get more customers first.【" + $scope.needed + "】");
+                };
+                $scope.reset = function() {
+                    $scope.startingEstimate = 0;
+                    $scope.needed = 0;
+                };
+        })
+        myAppModule.controller('StudentListController',
+            function($scope) {
+                var students = [{name:'a',id:1},
+                                {name:'b',id:2},
+                                {name:'c',id:3}]
+                $scope.students = students;
+                $scope.insertTom = function() {
+                    $scope.students.splice(1,0,{name:'d',id:4});
+                };
+        })
+    </script>
+</head>
+<body>
+    <form ng-submit='requestFunding()' ng-controller='StartUpController'>
+        Starting: <input ng-change='computeNeeded()' ng-model='startingEstimate'/>
+        Recommendation: {{needed}}
+        <button>Fund my startup!</button>
+        <button ng-click="reset()">Reset</button>
+    </form>
+    <div>------------------------------------</div>
+    <ul ng-controller='StudentListController'>
+        <li ng-repeat='student in students'>
+            {{$index + 1}}/{{$middle}}/{{$last}}<a href='/studet/view/{{student.id}}'>{{student.name}}</a>
+        </li>
+        <button ng-click='insertTom()'>Insert</button>
+    </ul>
+</body>
+</html>
